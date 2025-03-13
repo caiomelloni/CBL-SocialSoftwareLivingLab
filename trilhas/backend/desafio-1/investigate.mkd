@@ -1,0 +1,31 @@
+Antes de começar a resolver o problema, é importante ter uma visão geral sobre os conceitos que serão utilizados e 
+depois aprofundar o conhecimento conforme resolvemos o desafio, aqui vai uma lista do que será necessário:
+
+### Rodando código no backend
+É necessário ter o domínio de uma linguagem para rodar no backend, o typescript é fortemente recomendado devido à popularidade
+- [aprenda typescript com esse tutorial da microsoft](https://learn.microsoft.com/pt-br/training/paths/build-javascript-applications-typescript)
+
+- [aprenda os principais conceitos do node](https://nodejs.org/en/learn/getting-started/introduction-to-nodejs)
+
+
+### Conceitos de API RESTful
+Entenda como funcionam os métodos HTTP (GET, POST, PUT/PATCH, DELETE) e como estruturar endpoints seguindo os princípios REST.
+- [visão geral sobre o protocolo http](https://dev.to/ortizdavid/protocolo-http-2cbk)
+- [como usar o protocolo http no node](https://nodejs.org/en/learn/modules/anatomy-of-an-http-transaction)
+  - você pode usar um framework que facilita o uso do http, como por exemplo o [expressjs](https://expressjs.com/)
+
+### Validação e Sanitização de Dados
+Atente-se para a validação de dados, o seu backend deve possuir a lógica necessária para lidar com os casos de erros, por exemplo, que um artigo seja atualizado sem que nenhum dos seus campos seja alterado.
+
+### Banco de Dados e Modelagem de Dados 
+Como persistir os dados utilizando um banco de dados não relacional, para essa parte é recomendado o uso do MongoDB
+//TODO: como aprender o MongoDB
+
+### Boas Práticas de Desenvolvimento e Estruturação de Projeto
+Organize seu código separando responsabilidades (rotas, controladores, serviços, modelos) e aplique princípios de Clean Code para manter a API sustentável e fácil de manter.
+// TODO: achar um material bom que explique isso
+
+### Testes (opcional, mas recomendado)
+Para garantir a qualidade da API, é recomendável estudar testes unitários e/ou de integração.  
+  - Ferramentas como [Jest](https://jestjs.io/) (para Node.js) podem ser bastante úteis.
+// TODO: estruturar melhor como aprender isso

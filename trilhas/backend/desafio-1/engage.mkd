@@ -1,0 +1,23 @@
+# Personal Blogging Platform API
+![ilustração da aplicação](https://assets.roadmap.sh/guest/blogging-platform-api.png)
+
+Você deve construir uma API para um blog pessoal, o blog é composto por artigos, cada artigo tem a seguinte estrutura:
+- Título: texto com no máximo 50 caracteres
+- Conteúdo: texto com no máximo 5000 caracteres
+- Data: um timestamp que indica o dia de publicação ou da última atualização
+- Tag: texto com no máximo 16 caracteres e sem espaço, este campo é o único opcional
+
+### 1 - Resgatar todos os artigos
+Crie um endpoint que retorna todos os artigos existentes, esse endpoint pode receber parâmetros opcionais para filtros por data de publicação e/ou tags.
+
+### 2 - Resgatar um artigo específico
+Crie um endpoint que regata um artigo a partir do seu id. Se este artigo não existe, então você deve retornar uma resposta de erro com mensagem e status adequados.
+
+### 3 - Crie um novo artigo
+Crie um novo artigo passando o título e o conteúdo, opcionalmente a tag também pode ser passada. Se um artigo com o mesmo título já existe, então retorne uma resposta de erro adequada. A data deve ser automaticamente configurada para o momento da criação.
+
+### 4 - Delete um artigo
+Delete um artigo a partir de seu ID, se o artigo não existe, então você deve retornar uma resposta de erro com mensagem e status adequados.
+
+### 5 - Atualize um artigo
+Especifique o ID do artigo a ser atualizado. É obrigatório que pelo menos um dos campos seja atualizado (título, conteúdo, tag), caso contrário, retorne uma resposta de erro adequada. O campo de data deve ser automaticamente atualizado para o momento da atualização do artigo.
